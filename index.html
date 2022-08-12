@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.svg" />
+    <link rel="stylesheet" href="./style.css">
+    <!-- linking fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script type="module" src="./script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js"
+        integrity="sha512-n/4gHW3atM3QqRcbCn6ewmpxcLAHGaDjpEBu4xZd47N0W2oQ+6q7oc3PXstrJYXcbNU1OHdQ1T7pAP+gi5Yu8g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Somos a i8 Tecnologia da Informação, uma empresa que auxilia
+    outras empresas a modernizar seus sistemas para acabar com o
+    desperdício de dinheiro, trazendo soluções diferenciadas, muitas
+    vezes consideradas “impossíveis” pela concorrência.">
+    <title>i8 - Tecnologia da informação</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="loading-window"></div>
+        <header>
+            <div class="main">
+                <a href="#main">
+                    <img loading"lazy" style="width: 8rem;" src="./assets/images/header/logo-header.svg"
+                        alt="logo i8" />
+                </a>
+            </div>
+            <div class="bottom">
+                <ul>
+                    <li>
+                        <a href="#who">O que é a i8</a>
+                        <a href="#results">Resultados</a>
+                        <a href="#solutions">Nossas soluções</a>
+                        <div class="scroll-line"></div>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main id="main">
+            <section class="main-section">
+                <div class="section-container">
+                    <div>
+                        <h1>
+                            Modernização<br />
+                            <span>não é o futuro,</span><br />
+                            é o presente!
+                        </h1>
+                        <p>
+                            Somos a i8 Tecnologia da Informação, uma empresa que auxilia<br />
+                            outras empresas a modernizar seus sistemas para acabar com o<br />
+                            desperdício de dinheiro, trazendo soluções diferenciadas,
+                            muitas<br />
+                            vezes consideradas “impossíveis” pela concorrência.
+                        </p>
+                        <a href="#form-section" class="button">QUERO MODERNIZAR MINHA EMPRESA</a>
+                    </div>
+                    <div></div>
+                </div>
+            </section>
+
+            <section class="section6" id="form-section">
+                <div class="section-container">
+                    <div class="form-wrapper">
+                        <div>
+                            <h2>A hora de modernizar sua empresa já passou… Mas ainda da tempo de <span
+                                    style="color: var(--verde);">recuperar o
+                                    tempo perdido!</span>
+                            </h2>
+                            <p>Agende agora mesmo uma reunião com nosso especialista, ele irá realizar um diagnóstico
+                                com você <span class="dotted">e apontar pontos chaves que devem ser aprimorados!</span>
+                            </p>
+                        </div>
+                        <form id="form">
+                            <input id="formName" required type="text" minlength="2" placeholder="Seu nome:">
+                            <input id="formEmail" required type="email" minlength="6" placeholder="Seu Melhor E-mail:">
+                            <input id="formRole" required type="text" minlength="1" placeholder="Seu Cargo:" />
+                            <input id="formCompany" required type="text" minlength="1" placeholder="Nome da empresa:" />
+                            <input id="formNumber" required type="tel" minlength="10"
+                                placeholder="DDD + Seu Melhor Número:">
+                            <button class="button" type="submit" onclick="location.href='./obrigado.html'; sendEmail();"
+                                id="formbtn">MODERNIZAR MINHA EMPRESA</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section2" id="who">
+                <div class="section-container">
+                    <div class="window-wrapper">
+                        <article>
+                            <div class="search-bar">
+                                <img loading"lazy" src="./assets/images/home/search.svg" alt="lupa" />
+                                <h3 id="type-text">Mas afinal, quem é a i8?</h3>
+                                <img loading"lazy" src="./assets/images/home/close.svg" alt="x" />
+                            </div>
+                            <div class="text-wrapper">
+                                <div>
+                                    <p>
+                                        A i8 nasceu com o objetivo de trazer soluções inovadoras e
+                                        diferenciadas para o mercado por meio de softwares,
+                                        solucionando problemas considerados impossíveis por muitos.
+                                    </p>
+                                    <p>
+                                        Utilizando todo o conhecimento técnico e a motivação do seu
+                                        incrível time, a i8 traz para o mercado soluções nunca antes
+                                        vistas, e ainda em tempo recorde.
+                                    </p>
+                                </div>
+                            </div>
+                        </article>
+                        <article>
+                            <div>
+                                <img loading"lazy" src="./assets/images/home/icon-section-2.png" alt="logo i8 verde"
+                                    style="width: 20rem" class="icon-green" />
+                            </div>
+                            <div>
+                                <h3>i8 Tecnologia da informação</h3>
+                                <p>Programação e Desenvolvimento web</p>
+                                <a href="https://www.i8.com.br/" target="_blank" class="button">Saiba Mais Sobre a
+                                    i8</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section3" id="results">
+                <div class="section-container">
+                    <div class="section-header">
+                        <img loading"lazy" src="./assets/images/home/Vector.svg" alt="tag1" />
+                        <h2>Resultados da i8</h2>
+                        <img loading"lazy" src="./assets/images/home/Vector-1.svg" alt="tag2" />
+                    </div>
+                    <div>
+                        <div>
+                            <img class="botmax" src="./assets/images/home/botmax.png" alt="banner botmax" />
+                            <div class="content">
+                                <p>
+                                    Utilizando o ‘‘PostgreSQL’’ a i8 aplicou uma solução no maior
+                                    garantindo segurança e otimizando em 40% a velocidade de
+                                    pesquisa no Sistema, foi uma solução impactante a nível de os
+                                    profissionais técnicos da i8 darem palestras apresentando como
+                                    foi o desenvolvimento desta solução.
+                                </p>
+                                <a href="https://www.i8.com.br/" target="_blank" class="button">Outros Cases
+                                    <img loading"lazy" src="./assets/images/home/east.svg" alt="seta direita" /></a>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="assets/images/home/botmax-data.png" alt="Botmax dados">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <section class="section4" id="solutions">
+                <div class="section-container">
+                    <div>
+                        <div>
+                            <div class="content-header">
+                                <img loading"lazy" src="./assets/images/home/factory-icon.png" alt="" />
+                                <h2><img loading"lazy" src="./assets/images/home/Vector.svg" alt="tag1" /> Nossas
+                                    Soluções <img loading"lazy" src="./assets/images/home/Vector-1.svg" alt="tag2" />
+                                </h2>
+                            </div>
+                            <p>
+                                Somos especialistas em Desenvolvimento de Softwares, visando
+                                sempre modernizar sua empresa usando as mais recentes inovações
+                                do mercado através da nossa Fábrica de Softwares, que <span class="dotted">é
+                                    reconhecida por sua agilidade na entrega,</span> mas nós nos estendemos
+                                também para:
+                            </p>
+                        </div>
+
+                        <div class="cards-wrapper">
+                            <div class="card-wrapper">
+                                <div class="card-header">
+                                    <img loading"lazy" src="./assets/images/home/bd-icon.png" alt="" />
+                                    <p>Gerenciamento de Banco de Dados</p>
+                                </div>
+                                <div class="card-content">
+                                    <p>Visando sempre melhorar a performance do seu sistema, realizamos migrações e
+                                        atualizações
+                                        que tornam seu sistema mais eficiente, o que resulta em um aumento da
+                                        produtividade
+                                        e
+                                        lucratividade da sua empresa.</p>
+                                    <a href="https://www.i8.com.br/" target="_blank" class="button">Saiba Mais <img
+                                            loading"lazy" src="./assets/images/home/east.svg" alt="" /></a>
+                                </div>
+                            </div>
+                            <div class="card-wrapper">
+                                <div class="card-header">
+                                    <img loading"lazy" src="./assets/images/home/coworking-icon.png" alt="" />
+                                    <p>Espaços de Coworking</p>
+                                </div>
+                                <div class="card-content">
+                                    <p>Escritórios com ambientes perfeitos para desenvolvimento profissional de pessoas
+                                        e
+                                        empresas, conforto e network casados de forma a proporcionar a melhor
+                                        experiência de
+                                        trabalho possível.</p>
+                                    <a href="https://www.i8.com.br/" target="_blank" class="button">Saiba Mais <img
+                                            loading"lazy" src="./assets/images/home/east.svg" alt="" /></a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+            <section class="section5">
+                <div class="section-container">
+                    <div>
+                        <div class="section5-header-mobile">
+                            <h2>Entregamos soluções <span>especializadas.</span></h2>
+                            <img class="section5-close" loading"lazy" src="assets/images/home/close.svg"
+                                alt="fechar-icon">
+                        </div>
+                        <p>
+                            Podendo desenvolver uma do <strong>ZERO</strong> caso seja necessário, mas temos
+                            alguns produtos prontos desenvolvidos ao longo da nossa
+                            trajetória.
+                        </p>
+                        <a href="https://www.i8.com.br/" class="button">VER TODOS OS SERVIÇOS</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sec-partners">
+                <div class="section-container">
+                    <div class="content-header">
+                        <h2><img loading"lazy" src="./assets/images/home/Vector.svg" alt="tag1" /> Nossos Parceiros <img
+                                loading"lazy" src="./assets/images/home/Vector-1.svg" alt="tag2" />
+                        </h2>
+                    </div>
+                    <div class="content">
+                        <div class="partners-wrapper">
+                            <a href="http://www.acate.com.br/" target="_blank"><img class="partner"
+                                    src="./assets/images/home/parceiros/acate.png" alt="" /></a>
+                            <a href="http://www.acate.com.br/" target="_blank"><img class="partner"
+                                    src="./assets/images/home/parceiros/midi.png" alt="" /></a>
+                            <a href="http://www.sebrae.com.br/" target="_blank"><img class="partner"
+                                    src="./assets/images/home/parceiros/sebrae.png" alt="" /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section6">
+                <div class="section-container">
+                    <div class="form-wrapper">
+                        <div>
+                            <h2>A hora de modernizar sua empresa já passou… Mas ainda da tempo de <span
+                                    style="color: var(--verde);">recuperar o
+                                    tempo perdido!</span>
+                            </h2>
+                            <p>Agende agora mesmo uma reunião com nosso especialista, ele irá realizar um diagnóstico
+                                com você <span class="dotted">e apontar pontos chaves que devem ser aprimorados!</span>
+                            </p>
+                        </div>
+                        <form id="form2">
+                            <input id="formName2" required type="text" minlength="2" placeholder="Seu nome:">
+                            <input id="formEmail2" required type="email" minlength="6" placeholder="Seu Melhor E-mail:">
+                            <input id="formRole2" required type="text" minlength="1" placeholder="Seu Cargo:" />
+                            <input id="formCompany2" required type="text" minlength="1"
+                                placeholder="Nome da empresa:" />
+                            <input id="formNumber2" required type="tel" minlength="10"
+                                placeholder="DDD + Seu Melhor Número:">
+                            <button class="button" type="submit" onclick="location.href='./obrigado.html'; sendEmail();"
+                                id="formbtn2">MODERNIZAR MINHA EMPRESA</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="main-section">
+                <div class="footer-container">
+                    <img loading"lazy" src="./assets/images/footer/logo-footer.svg" alt="logo rodape i8" />
+                    <div class="about-section">
+                        <p class="section-title">Sobre a i8</p>
+                        <div>
+                            <a href="#who">Quem Somos</a>
+                            <a href="#results">Nossos Cases</a>
+                            <a href="#results">Clientes</a>
+                            <a href="#solutions">Soluções</a>
+                        </div>
+                    </div>
+                    <div class="locate-section">
+                        <p class="section-title">Localização</p>
+                        <p>
+                            Av. Luiz Boiteux Piazza, 1302<br />
+                            Canasvieiras, Florianópolis - SC<br />
+                            Cep: 88056-000
+                        </p>
+                    </div>
+                    <div class="contact-section">
+                        <p class="section-title">Fale Conosco</p>
+                        <div>
+                            <img loading"lazy" src="./assets/images/footer/phone.svg" alt="telefone icone" />
+                            <a href="https://wa.me/5548988186998" target="_blank">+55 48 98818-6998</a>
+                        </div>
+                        <div>
+                            <img loading"lazy" src="./assets/images/footer/email.svg" alt="carta icone" />
+                            <a href="mailto:marketing@i8.com.br">marketing@i8.com.br </a>
+                        </div>
+                    </div>
+                    <div class="social-section">
+                        <p class="section-title">Redes Sociais</p>
+                        <div>
+                            <a target="_blank" href="https://www.facebook.com/i8tec/">
+                                <img loading"lazy" src="./assets/images/footer/facebook.svg" alt="facebook i8" />
+                            </a>
+                            <a target="_blank" href="https://www.instagram.com/i8tic/?hl=en">
+                                <img loading"lazy" src="./assets/images/footer/Instagram.svg" alt="instagram i8" />
+
+                            </a>
+                            <a target="_blank"
+                                href="https://www.linkedin.com/company/i8-tecnologia-da-informa%C3%A7%C3%A3o-e-comunica%C3%A7%C3%A3o/">
+                                <img loading"lazy" src="./assets/images/footer/linkedin.svg" alt="linkedin i8" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom-section">
+                <div class="footer-container">
+                    <p>© 2021-2022 i8 Tecnologia da Informação</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
+    <script>
+        const scrollline = document.querySelector('.scroll-line');
+
+        var typeTextId = "#type-text";
+        const typeText = document.getElementById("type-text");
+        const botmaxImg = document.querySelector(".botmax");
+        const sectionHeader = document.querySelector(".section-header").children[1];
+        const windowHeight = window.innerHeight;
+        const fullHeight = document.body.clientHeight;
+
+        function fillscrolllineDesktop() {
+            const scrolled = window.scrollY;
+            const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
+
+            if (scrolled > 0) scrollline.style.width = 0 + '%';
+            if (scrolled > 1200) scrollline.style.width = 24 + '%';
+            if (scrolled > 1900) scrollline.style.width = 49 + '%';
+            if (scrolled > 2600) scrollline.style.width = 75.5 + '%';
+            if (percentScrolled >= 99) scrollline.style.width = 100 + '%';
+            if (window.scrollY >= 1900) {
+
+                sectionHeader.style.padding = "0 2rem";
+                sectionHeader.style.animation = "titleSectionW 0.5s ease-out 0s forwards, 0.5s titleSectionO ease-in-out 0.2s forwards";
+
+                botmaxImg.style.transform = "translateX(0vw)";
+            }
+
+            if (window.scrollY >= 1000) {
+                typeText.style.color = "black";
+                new TypeIt(typeTextId, {
+                    speed: 60,
+                    loop: false,
+                }).go();
+                typeTextId = "";
+
+            }
+
+        };
+
+        function fillscrolllineMobile() {
+            const scrolled = window.scrollY;
+            const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
+
+            if (scrolled > 0) scrollline.style.width = 0 + '%';
+            if (scrolled > 1400) scrollline.style.width = 24 + '%';
+            if (scrolled > 1900) scrollline.style.width = 49 + '%';
+            if (scrolled > 2800) scrollline.style.width = 75.5 + '%';
+            if (percentScrolled >= 99) scrollline.style.width = 100 + '%';
+            if (window.scrollY >= 1900) {
+
+                sectionHeader.style.padding = "0 2rem";
+                sectionHeader.style.animation = "titleSectionW 0.5s ease-out 0s forwards, 0.5s titleSectionO ease-in-out 0.2s forwards";
+
+                botmaxImg.style.transform = "translateX(0vw)";
+            }
+
+            if (window.scrollY >= 1300) {
+                typeText.style.color = "black";
+                new TypeIt(typeTextId, {
+                    speed: 60,
+                    loop: false,
+                }).go();
+                typeTextId = "";
+
+            }
+
+        };
+
+        function fillscrolllineDesktopFullHD() {
+            const scrolled = window.scrollY;
+            const percentScrolled = (scrolled / (fullHeight - windowHeight)) * 100;
+
+            if (scrolled > 0) scrollline.style.width = 0 + '%';
+            if (scrolled > 1700) scrollline.style.width = 32 + '%';
+            if (scrolled > 2700) scrollline.style.width = 49 + '%';
+            if (scrolled > 3800) scrollline.style.width = 69 + '%';
+            if (percentScrolled >= 99) scrollline.style.width = 100 + '%';
+            if (window.scrollY >= 1900) {
+
+                sectionHeader.style.padding = "0 2rem";
+                sectionHeader.style.animation = "titleSectionW 0.5s ease-out 0s forwards, 0.5s titleSectionO ease-in-out 0.2s forwards";
+
+                botmaxImg.style.transform = "translateX(0vw)";
+            }
+
+            if (window.scrollY >= 1000) {
+                typeText.style.color = "black";
+                new TypeIt(typeTextId, {
+                    speed: 60,
+                    loop: false,
+                }).go();
+                typeTextId = "";
+
+            }
+
+        };
+
+        function changeBgColor() {
+            document.getElementsByTagName("body").style.backgroundColor = "black";
+        }
+
+        setTimeout(() => {
+            document.querySelector(".loading-window").style.opacity = "0";
+            document.querySelector(".loading-window").style.pointerEvents = "none";
+        }, 3100);
+
+        setTimeout(() => {
+            document.body.style.overflowY = "scroll";
+        }, 3800);
+
+        if (window.screen.width > 1800) {
+            window.addEventListener('scroll', fillscrolllineDesktopFullHD);
+        }
+
+        else if (window.screen.width > 740) {
+            window.addEventListener('scroll', fillscrolllineDesktop);
+        }
+
+
+        else {
+            window.addEventListener('scroll', fillscrolllineMobile);
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
