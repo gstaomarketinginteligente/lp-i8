@@ -67,6 +67,7 @@ form.addEventListener("submit", (event) => {
       dataForm.name +
       ",\nLogo entraremos em contato!"
   );
+  location.href = "./obrigado.html";
 
   event.preventDefault();
 });
@@ -97,6 +98,7 @@ form2.addEventListener("submit", (event) => {
       dataForm.name +
       ",\nLogo entraremos em contato!"
   );
+  location.href = "./obrigado.html";
 
   event.preventDefault();
 });
