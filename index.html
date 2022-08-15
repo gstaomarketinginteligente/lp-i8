@@ -28,7 +28,7 @@
         <header>
             <div class="main">
                 <a href="#main">
-                    <img loading"lazy" style="width: 8rem;" src="./assets/images/header/logo-header.svg"
+                    <img loading="lazy" style="width: 8rem;" src="./assets/images/header/logo-header.svg"
                         alt="logo i8" />
                 </a>
             </div>
@@ -46,7 +46,7 @@
         <main id="main">
             <section class="main-section">
                 <div class="section-container">
-                    <div>
+                    <div class="content">
                         <h1>
                             Modernização<br />
                             <span>não é o futuro,</span><br />
@@ -74,16 +74,20 @@
                                     tempo perdido!</span>
                             </h2>
                             <p>Agende agora mesmo uma reunião com nosso especialista, ele irá realizar um diagnóstico
-                                com você <span class="dotted">e apontar pontos chaves que devem ser aprimorados!</span>
+                                com você <span class="dotted">e apontar pontos chaves</span> que devem ser aprimorados!
                             </p>
                         </div>
                         <form id="form">
-                            <input id="formName" required type="text" minlength="2" placeholder="Seu nome:">
-                            <input id="formEmail" required type="email" minlength="6" placeholder="Seu Melhor E-mail:">
-                            <input id="formRole" required type="text" minlength="1" placeholder="Seu Cargo:" />
-                            <input id="formCompany" required type="text" minlength="1" placeholder="Nome da empresa:" />
-                            <input id="formNumber" required type="tel" minlength="10"
-                                placeholder="DDD + Seu Melhor Número:">
+                            <input id="formName2" required type="text" minlength="5" maxlength="30"
+                                placeholder="Seu nome:" />
+                            <input id="formEmail2" required type="email" minlength="6" maxlength="30"
+                                placeholder="Seu Melhor E-mail:" />
+                            <input id="formRole2" required type="text" minlength="5" maxlength="20"
+                                placeholder="Seu Cargo:" />
+                            <input id="formCompany2" required type="text" minlength="5" maxlength="25"
+                                placeholder="Nome da empresa:" />
+                            <input id="formNumber2" required type="tel" min="10" max="14"
+                                placeholder="DDD + Seu Melhor Número:" />
                             <button class="button" type="submit" onclick="location.href='./obrigado.html'; sendEmail();"
                                 id="formbtn">MODERNIZAR MINHA EMPRESA</button>
                         </form>
@@ -174,8 +178,9 @@
                             <p>
                                 Somos especialistas em Desenvolvimento de Softwares, visando
                                 sempre modernizar sua empresa usando as mais recentes inovações
-                                do mercado através da nossa Fábrica de Softwares, que <span class="dotted">é
-                                    reconhecida por sua agilidade na entrega,</span> mas nós nos estendemos
+                                do mercado através da nossa Fábrica de Softwares, que é
+                                reconhecida por sua <span class="dotted"></span>agilidade na entrega,</span> mas nós nos
+                                estendemos
                                 também para:
                             </p>
                         </div>
@@ -264,17 +269,20 @@
                                     tempo perdido!</span>
                             </h2>
                             <p>Agende agora mesmo uma reunião com nosso especialista, ele irá realizar um diagnóstico
-                                com você <span class="dotted">e apontar pontos chaves que devem ser aprimorados!</span>
+                                com você <span class="dotted">e apontar pontos chaves</span> que devem ser aprimorados!
                             </p>
                         </div>
                         <form id="form2">
-                            <input id="formName2" required type="text" minlength="2" placeholder="Seu nome:">
-                            <input id="formEmail2" required type="email" minlength="6" placeholder="Seu Melhor E-mail:">
-                            <input id="formRole2" required type="text" minlength="1" placeholder="Seu Cargo:" />
-                            <input id="formCompany2" required type="text" minlength="1"
+                            <input id="formName2" required type="text" minlength="5" maxlength="30"
+                                placeholder="Seu nome:" />
+                            <input id="formEmail2" required type="email" minlength="6" maxlength="30"
+                                placeholder="Seu Melhor E-mail:" />
+                            <input id="formRole2" required type="text" minlength="5" maxlength="20"
+                                placeholder="Seu Cargo:" />
+                            <input id="formCompany2" required type="text" minlength="5" maxlength="25"
                                 placeholder="Nome da empresa:" />
-                            <input id="formNumber2" required type="tel" minlength="10"
-                                placeholder="DDD + Seu Melhor Número:">
+                            <input id="formNumber2" required type="tel" min="10" max="14"
+                                placeholder="DDD + Seu Melhor Número:" />
                             <button class="button" type="submit" onclick="location.href='./obrigado.html'; sendEmail();"
                                 id="formbtn2">MODERNIZAR MINHA EMPRESA</button>
                         </form>
@@ -300,6 +308,7 @@
                         <p>
                             Av. Luiz Boiteux Piazza, 1302<br />
                             Canasvieiras, Florianópolis - SC<br />
+                            Parque Tecnológico Sapiens Parque<br />
                             Cep: 88056-000
                         </p>
                     </div>

@@ -187,27 +187,46 @@ p {
 
 button,
 .button {
-    font-size: 1.8rem;
-    font-weight: 700;
-    line-height: 3.24rem;
+    font-size: 2rem;
     padding: 0.2rem 1.5rem;
-    border: solid var(--verde) 0.3rem;
-    color: var(--verde);
+    font-weight: 500;
+    border: 0.4rem solid var(--verde);
     border-radius: 1.5rem;
-    transition: 0.3s;
-    font-family: "Kanit", sans-serif;
     cursor: pointer;
-    background-color: white;
+    line-height: 3.6rem;
     white-space: nowrap;
+    color: var(--verde);
+    background-color: white;
+    font-family: "Kanit", sans-serif;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+button img,
+.button img {
+    margin-left: 1rem;
 }
 
 form button {
-    width: 100%;
+    width: 100% !important;
 }
 
 button:hover,
 .button:hover {
-    filter: brightness(120%);
+    color: var(--roxo);
+    border-color: var(--roxo);
+    transform: translate3d(0.5rem, -0.5rem, 0);
+    box-shadow: -0.5rem 0.5rem 0rem var(--roxo);
+}
+
+button:active,
+.button:active {
+    background-color: var(--roxo);
+    color: white;
+    transform: translate3d(0, 0, 0);
+    box-shadow: none;
 }
 
 .wrapper {
@@ -286,6 +305,8 @@ main .main-section .section-container .button {
 main .main-section div p {
     margin: 2.5rem 0;
 }
+
+
 
 /* section 2 */
 
@@ -490,7 +511,6 @@ article .criativo {
     border: 3px solid black;
     border-radius: 1.5rem;
     padding: 2rem 2rem 5rem;
-    min-width: 36rem;
 }
 
 .card-wrapper .card-header {
@@ -823,6 +843,12 @@ footer .bottom-section {
     main .section2 .section-container .window-wrapper {
         padding: 0;
         grid-template-rows: 0.5fr 1fr;
+    }
+
+    main .content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .window-wrapper article:last-child {
